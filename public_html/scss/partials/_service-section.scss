@@ -1,3 +1,5 @@
+$button-hover: darken($bg-beige, 15%);
+
 .service-section{
 
     margin-top:7.7rem;
@@ -6,11 +8,11 @@
         margin-top:calc(7.7rem + 9.7rem);
     }
 
-    .h-line{
+    /*.h-line{
         width: 10%;
         color: darken($bg-rose, 15%);
         margin: 2.8rem 0 4.1rem;
-    }
+    }*/
     
     
     .info-left{
@@ -18,7 +20,15 @@
         aspect-ratio: 1/1;
 
         .service-info-wrapper{
-
+            
+            padding-left: 5rem;
+            padding-right: 3rem;
+            
+            @media(min-width:400px){
+            padding-left: 7.1rem;
+            padding-right: 8.3rem;
+            }
+            
 
             @media (min-width: 768px) and (max-width: 990px) {
                 h3{
@@ -31,7 +41,13 @@
                 border-radius: 0;
                 font-size: 1.2rem;
                 margin-top:3.8rem;
-
+                
+                &:hover{
+                    background-color: darken($bg-beige, 55%);
+                    color: white;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                }
+                
                 @media(min-width:990px){
                     margin-top:5.8rem;
                     font-size: 1.4rem;
@@ -45,7 +61,9 @@
         aspect-ratio: 1/1;
 
         .service-info-wrapper{
-
+            
+            padding-left: 7.1rem;
+            padding-right: 8.3rem;
 
             @media (min-width: 768px) and (max-width: 990px) {
                 h3{
@@ -58,6 +76,12 @@
                 border-radius: 0;
                 font-size: 1.2rem;
                 margin-top:3.8rem;
+                
+                &:hover{
+                    background-color: darken($bg-rose, 55%);
+                    color: white;
+                    border: 1px solid rgba(0, 0, 0, 0);
+                }
 
                 @media(min-width:990px){
                     margin-top:5.8rem;
