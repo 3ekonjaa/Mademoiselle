@@ -1,0 +1,54 @@
+.trend-section{
+    
+    padding-top: 6.7rem;
+    
+    
+    .h-line{
+        width: 10%;
+        color: darken($bg-rose, 15%);
+        margin: 2.8rem 0 4.1rem;
+    }
+  
+    .trend-wrapper{
+
+        position: relative;
+        
+        .trend-image-wrapper{
+            margin-bottom: 7rem;
+            @media(min-width:990px){
+                margin-bottom: 0;
+            }
+        }
+
+        .trend-blog-info{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            background-color: white;
+            padding-top: 0.6rem;
+            padding-bottom: 3rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            width: 80%;
+
+            .trend-blog-title{
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 10%;
+                margin-bottom: 0;
+            }
+
+            .trend-blog-date{
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 46px;
+                letter-spacing: 10%;
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+}

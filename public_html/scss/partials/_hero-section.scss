@@ -1,0 +1,16 @@
+.hero-section{
+
+    background-image: 
+        linear-gradient(rgba(34, 10, 8, 0.5),rgba(34, 10, 8, 0)),
+        url(../images/hero/about.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    .hero-title{
+        padding: 25.2rem 0;
+        line-height: 6.8rem;
+    }
+
+}

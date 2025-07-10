@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 html {
   font-size: 10px;
 }
@@ -233,29 +234,29 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.525rem + 3.3vw);
+  font-size: calc(1.725rem + 5.7vw);
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 
 h2, .h2 {
-  font-size: calc(1.445rem + 2.34vw);
+  font-size: calc(1.425rem + 2.1vw);
 }
 @media (min-width: 1200px) {
   h2, .h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 
 h3, .h3 {
-  font-size: calc(1.405rem + 1.86vw);
+  font-size: calc(1.485rem + 2.82vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 2.8rem;
+    font-size: 3.6rem;
   }
 }
 
@@ -764,7 +765,7 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 2.4rem;
   --bs-gutter-y: 0;
   width: 100%;
   padding-right: calc(var(--bs-gutter-x) * 0.5);
@@ -795,7 +796,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1320px;
+    max-width: 1140px;
   }
 }
 :root {
@@ -808,7 +809,7 @@ progress {
 }
 
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 2.4rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -4435,7 +4436,7 @@ textarea.form-control-lg {
   --bs-card-color: ;
   --bs-card-bg: var(--bs-body-bg);
   --bs-card-img-overlay-padding: 1rem;
-  --bs-card-group-margin: 0.75rem;
+  --bs-card-group-margin: 1.2rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -5461,7 +5462,7 @@ textarea.form-control-lg {
   --bs-toast-zindex: 1090;
   --bs-toast-padding-x: 0.75rem;
   --bs-toast-padding-y: 0.5rem;
-  --bs-toast-spacing: 1.5rem;
+  --bs-toast-spacing: 2.4rem;
   --bs-toast-max-width: 350px;
   --bs-toast-font-size: 0.875rem;
   --bs-toast-color: ;
@@ -8395,15 +8396,15 @@ textarea.form-control-lg {
 }
 
 .fs-1 {
-  font-size: calc(1.525rem + 3.3vw) !important;
+  font-size: calc(1.725rem + 5.7vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.445rem + 2.34vw) !important;
+  font-size: calc(1.425rem + 2.1vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.405rem + 1.86vw) !important;
+  font-size: calc(1.485rem + 2.82vw) !important;
 }
 
 .fs-4 {
@@ -11958,13 +11959,13 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 4rem !important;
+    font-size: 6rem !important;
   }
   .fs-2 {
-    font-size: 3.2rem !important;
+    font-size: 3rem !important;
   }
   .fs-3 {
-    font-size: 2.8rem !important;
+    font-size: 3.6rem !important;
   }
   .fs-4 {
     font-size: 2.4rem !important;
@@ -12093,6 +12094,163 @@ textarea.form-control-lg {
 
 img {
   max-width: 100%;
+}
+
+h1, .h1, h2, .h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h3, .h3, h4, .h4 {
+  font-family: "Lato", sans-serif;
+}
+
+h1, .h1 {
+  color: #fff;
+}
+
+header .navbar {
+  padding: 3.2rem 0;
+}
+header .navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+  text-decoration: none;
+  transition: 0.1s;
+}
+header .navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: rgb(210.5, 166, 166);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+header .navbar .navbar-nav .nav-item .nav-link:hover::after {
+  transform: scaleX(1);
+}
+@media (min-width: 990px) {
+  header .navbar .navbar-nav .nav-item .nav-link {
+    margin-left: 6.8rem;
+  }
+}
+
+.active {
+  font-weight: 500;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(34, 10, 8, 0.5), rgba(34, 10, 8, 0)), url(../images/hero/about.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-section .hero-title {
+  padding: 25.2rem 0;
+  line-height: 6.8rem;
+}
+
+.trend-section {
+  padding-top: 6.7rem;
+}
+.trend-section .h-line {
+  width: 10%;
+  color: rgb(210.5, 166, 166);
+  margin: 2.8rem 0 4.1rem;
+}
+.trend-section .trend-wrapper {
+  position: relative;
+}
+.trend-section .trend-wrapper .trend-image-wrapper {
+  margin-bottom: 7rem;
+}
+@media (min-width: 990px) {
+  .trend-section .trend-wrapper .trend-image-wrapper {
+    margin-bottom: 0;
+  }
+}
+.trend-section .trend-wrapper .trend-blog-info {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: white;
+  padding-top: 0.6rem;
+  padding-bottom: 3rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  width: 80%;
+}
+.trend-section .trend-wrapper .trend-blog-info .trend-blog-title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 10%;
+  margin-bottom: 0;
+}
+.trend-section .trend-wrapper .trend-blog-info .trend-blog-date {
+  font-size: 14px;
+  leading-trim: NONE;
+  line-height: 46px;
+  letter-spacing: 10%;
+  margin-bottom: 0;
+}
+
+.service-section {
+  margin-top: 7.7rem;
+}
+@media (min-width: 990px) {
+  .service-section {
+    margin-top: 17.4rem;
+  }
+}
+.service-section .h-line {
+  width: 10%;
+  color: rgb(210.5, 166, 166);
+  margin: 2.8rem 0 4.1rem;
+}
+.service-section .info-left {
+  background-color: rgb(245, 245, 245);
+  aspect-ratio: 1/1;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .service-section .info-left .service-info-wrapper h3, .service-section .info-left .service-info-wrapper .h3 {
+    font-size: 2.1rem;
+  }
+}
+.service-section .info-left .service-info-wrapper .learn-button {
+  border: 1px solid black;
+  border-radius: 0;
+  font-size: 1.2rem;
+  margin-top: 3.8rem;
+}
+@media (min-width: 990px) {
+  .service-section .info-left .service-info-wrapper .learn-button {
+    margin-top: 5.8rem;
+    font-size: 1.4rem;
+  }
+}
+.service-section .info-right {
+  background-color: rgb(236, 217, 217);
+  aspect-ratio: 1/1;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .service-section .info-right .service-info-wrapper h3, .service-section .info-right .service-info-wrapper .h3 {
+    font-size: 2.1rem;
+  }
+}
+.service-section .info-right .service-info-wrapper .learn-button {
+  border: 1px solid black;
+  border-radius: 0;
+  font-size: 1.2rem;
+  margin-top: 3.8rem;
+}
+@media (min-width: 990px) {
+  .service-section .info-right .service-info-wrapper .learn-button {
+    margin-top: 5.8rem;
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

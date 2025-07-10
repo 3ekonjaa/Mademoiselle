@@ -3,3 +3,24 @@ html{
 }
 
 $font-size-base: 1.6rem;
+
+$h1-font-size:                $font-size-base * 3.75 !default;
+$h2-font-size:                $font-size-base * 1.875 !default;
+$h3-font-size:                $font-size-base * 2.25 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+) !default;
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           2.4rem !default;
+$grid-row-columns:            6 !default;
+
+
