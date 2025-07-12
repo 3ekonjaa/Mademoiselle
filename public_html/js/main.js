@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     //ANIMATION
     function animation() {
         let  windowHeight = $(window).height();
@@ -20,7 +20,7 @@ $(document).ready(function(){
         animation();
     });
     animation();
-    
+
     //validate form
 
     if ($('.contact-form').length > 0) {
@@ -61,7 +61,7 @@ $(document).ready(function(){
             }
         });
     }
-    
-    
-});
 
+ 
+
+});

@@ -1,0 +1,46 @@
+.hero-section-single-service{
+    padding-top: 1rem;
+    @media(min-width: 990px){
+        padding-top: 5rem;
+    }
+    
+    
+    .ss-image-wrapper{
+        position: sticky;
+        top: 20px;
+        height: max-content;
+        
+        
+            
+    }
+    
+    h1{ 
+        
+        font-family: 'Lato';
+        color: black;
+        font-weight: 400;
+        
+        @media(min-width:768px){
+            font-size: 4.4rem;
+        }
+        margin-bottom: 4.6rem;
+    }
+    
+    p{
+        font-family: 'Lato';
+        color: black;
+        font-weight: 300;
+    }
+}
+
+
+.ss-trend{
+    padding-top: 15.9rem;
+}
+
+.ss-footer{
+    padding-top: 7.6rem;
+    @media(min-width: 990px){
+        padding-top: 15.6rem;
+    }
+}

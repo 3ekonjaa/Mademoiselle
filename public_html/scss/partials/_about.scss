@@ -1,13 +1,41 @@
-.trend-section{
+
+
+
+.trend-section-about{
+
+    p{
+        font-family: Lato;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 26px;
+        letter-spacing: 0%;
+
+    }
+
+    .trend-group{
+        @media(min-width:990px){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
 
     padding-top: 6.7rem;
 
+    .about-title{
+        font-family: Lato;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 44px;
+        leading-trim: NONE;
+        line-height: 53px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
 
-    /*.h-line{
-        width: 10%;
-        color: darken($bg-rose, 15%);
-        margin: 2.8rem 0 4.1rem;
-    }*/
+    }
+
 
     .trend-wrapper{
 
@@ -74,5 +102,6 @@
 
 }
 
-
-
+.about-footer{
+    padding-top: 12rem;
+}
