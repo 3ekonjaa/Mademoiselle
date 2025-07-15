@@ -32,36 +32,50 @@ $(document).ready(function () {
                 $(element).addClass('is-valid').removeClass('is-invalid');
             },
             rules: {
-                name: {
+                'contact-name': {
                     required: true
                 },
-                email: {
+                'contact-email': {
                     required: true,
                     email: true
                 },
-                message: {
+                'contact-message': {
                     required: true
                 }
             },
             messages: {
-                name: {
+                'contact-name': {
                     required: 'The Name* field is required'
                 },
-                email: {
+                'contact-email': {
                     required: 'The Email* field is required',
                     email: 'Please provide a valid email address'
                 },
-                message: {
+                'contact-message': {
                     required: 'The Message* field is required'
                 }
             },
             errorElement: 'p',
             errorPlacement: function (error, element) {
-                error.appendTo(element.closest(".form-group").find(".error-msg"));
+                error.appendTo(element.closest(".form-group").find(".invalid-feedback"));
             }
         });
     }
 
- 
+
+    if ($('.team-slider').length > 0) {
+        $('.team-slider').owlCarousel({
+            loop: true,
+            dots: true,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                }
+
+            }
+        })
+    }
+
 
 });

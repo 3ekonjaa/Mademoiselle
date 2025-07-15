@@ -15,6 +15,11 @@ footer{
                 color: $icon-color;
                 text-decoration: none;
                 font-size: 2rem;
+                transition: 0.15s;
+                
+                &:hover{
+                    color: darken($icon-color, 40%);
+                }
             }
 
             margin-right: 3.2rem;

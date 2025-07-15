@@ -12406,7 +12406,27 @@ header .navbar .navbar-nav .nav-item .nav-link:hover::after {
 
 .team-section {
   padding-top: 12.7rem;
+  padding-bottom: 10.4rem;
 }
+.team-section .team-slider {
+  padding: 5rem 0;
+  border: 2px solid #ECD9D9;
+}
+@media (min-width: 768px) {
+  .team-section .team-slider {
+    padding: 8.7rem 0;
+  }
+}
+.team-section .team-slider p {
+  font-family: Lato;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 28px;
+  letter-spacing: 0%;
+}
+
 footer {
   padding-bottom: 3.8rem;
 }
@@ -12423,6 +12443,10 @@ footer ul li a {
   color: rgb(236, 217, 217);
   text-decoration: none;
   font-size: 2rem;
+  transition: 0.15s;
+}
+footer ul li a:hover {
+  color: #a65353;
 }
 footer ul li:last-of-type {
   margin-right: 2rem;

@@ -1,7 +1,27 @@
 .team-section{
     padding-top: 12.7rem;
-    
-    .team-title{
+    padding-bottom: 10.4rem;
+
+    .team-slider{
+
+        padding: 5rem 0;
+
+        @media(min-width: 768px){
+            padding: 8.7rem 0;
+        }
+        border: 2px solid #ECD9D9;
+
+        p{
+            font-family: Lato;
+            font-weight: 300;
+            font-style: Light;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 28px;
+            letter-spacing: 0%;
+
+        }
+
         
     }
 }
